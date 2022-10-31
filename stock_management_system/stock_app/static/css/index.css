@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'system-ui', 'Roboto';
+    overflow-x: hidden !important;
+    background: mintcream;
+}
+
+
+.custom_table {
+    box-shadow: 2px 0px 4px 2px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 2px 0px 4px 2px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 2px 0px 4px 2px rgba(0, 0, 0, 0.52);
+}
+
+.table td,
+.table th {
+    vertical-align: middle !important;
+}
+
+.jumbotron {
+    background: #c1c1c126;
+}
+
+
+input:hover {
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+
+.custom_login_form {
+    background: #fff;
+    width: 50%;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, .5);
+    border: 2px solid #eee;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.custom_login_form form ul li {
+    list-style: none;
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.custom_login_form form label {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
+
+.custom_login_form form {
+    margin-top: 30px;
+}
+
+.custom_login_form form p input {
+    padding: 5px 30px;
+    font-size: 20px !important;
+    background: #fff !important;
+    color: #000 !important;
+    /*border: 1px solid #eee;*/
+    margin-bottom: 0;
+
+}
+
+
+.custom_login_form form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+/* Style the submit button */
+.custom_login_form form input[value='Log in'] {
+    margin-bottom: 40px;
+    font-size: 20px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.custom_login_form form span.helptext {
+    padding-top: 10px;
+    display: block;
+}
+
+.custom_login_form form input[value='Submit'] {
+    font-size: 20px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.custom_login_form p {
+    font-size: 20px;
+}
+
+
+.custom_jum .input_1,.input_2,.input_3{
+    width: 100%;
+}
+
+
+.table_custom table th{
+    background-color: lightskyblue !important;
+    border-color: lightskyblue !important;
+    color:#000 !important;
+}
+
+
+
+
+.table_custom1 table th{
+    background-color: rgba(0,0,0,.9) !important;
+    border-color: rgba(0, 0, 0, .0); !important;
+    color:#eee !important;
+}
+
+
+.table_custom3 table th{
+    background-color: darkcyan !important;
+    border-color: #eee !important;
+    color:#eee !important;
+}
+
+
+
+
+
+.paging-nav {
+  text-align: right;
+  padding-top: 2px;
+}
+
+.paging-nav a {
+  margin: auto 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 7px;
+  background: #91b9e6;
+  color: white;
+  border-radius: 3px;
+}
+
+.paging-nav a:hover{
+    
+  background: #187ed5;
+}
+.paging-nav .selected-page {
+  background: #187ed5;
+  font-weight: bold;
+}
+
+.paging-nav,
+#tableData {
+    width: 100% !important;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}

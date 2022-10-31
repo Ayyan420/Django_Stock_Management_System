@@ -1,0 +1,23 @@
+{% extends "stock_app/navbar.html" %}
+
+
+
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+<div class="row">
+    <div class="container">
+
+        {% if query_set %}
+        <div class="jumbotron mt-5">
+            <h1 class="mb-5">Reorder {{query_set.item_name}}</h1>
+            <form method="POST" class="post-form" enctype="multipart/form-data">
+                {{form|crispy}}
+                <input  class="btn btn-sm btn-info" type="submit" value="Reorder" />
+            </form>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock content %}

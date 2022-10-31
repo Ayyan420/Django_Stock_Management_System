@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}" />
+    <title>Stock Management</title>
+</head>
+
+<body>
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Stock Management System</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-between align-items-center" style="width:100%;">
+                <div class="d-flex">
+                </div>
+                <div class="d-flex">
+                    <li class="nav-item">
+                        <a href="/accounts/login/">
+                            <span class="btn btn-sm btn-warning">{{request.user}} | Login</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+        <div class="container mt-5 mb-5 d-flex justify-content-center align-items-center">
+            <div class="jumbotron custom_login_form">
+                {% block title %}
+                {% endblock %}
+                {% block content %}
+                {% endblock %}
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
